@@ -17,7 +17,7 @@ import dotenv from 'dotenv';
 app.use('/posts', postRoutes);
 app.use("/user", userRouter);
 
-// const CONNECTION_URL = 'mongodb+srv://admin:Maxima707@cluster0.9olc2.mongodb.net/Fruits_app?retryWrites=true&w=majority';
+
 const PORT = process.env.PORT|| 3000;
 
 mongoose.connect(process.env.CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
