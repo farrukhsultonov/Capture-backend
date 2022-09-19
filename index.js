@@ -17,6 +17,9 @@ import dotenv from 'dotenv';
 app.use('/posts', postRoutes);
 app.use("/user", userRouter);
 
+app.get('/', (req, res) => {
+  res.send('Hello to Memories API')
+});
 
 const PORT = process.env.PORT|| 3000;
 
